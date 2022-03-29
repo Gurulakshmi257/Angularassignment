@@ -1,0 +1,71 @@
+<div class="container">
+
+    <section class="form-dark col-6">
+        <!--Form without header-->
+        <mdb-card
+          style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table7.webp')"
+          style="width: 28rem; background-size: cover"
+        >
+          <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+            <!--Header-->
+            <div class="text-center">
+              <h3 class="white-text mb-5 mt-4 font-weight-bold">
+        
+                <strong>WELCOME NETFLIX </strong>
+                <!-- <a class="green-text font-weight-bold">
+                  <strong> UP</strong>
+                </a> -->
+              </h3>
+            </div>
+      
+            <!--Body-->
+            <form [formGroup]="darkForm">
+              <div class="md-form">
+                <input
+                  type="text"
+                  id="darkFormEmailEx"
+                  class="form-control white-text"
+                  formControlName="darkFormEmailEx"
+                  mdbInput
+                />
+                <label for="darkFormEmailEx">Your email</label>
+              </div>
+      
+              <div class="md-form pb-3">
+                <input
+                  type="password"
+                  id="darkFormPasswordEx"
+                  class="form-control white-text"
+                  formControlName="darkFormPasswordEx"
+                  mdbInput
+                />
+                <label for="darkFormPasswordEx">Your password</label>
+                <!-- <mdb-checkbox mdbInput class="my-4"
+                  >Accept the
+                  <a href="#" class="green-text font-weight-bold"> Terms and Conditions</a></mdb-checkbox
+                > -->
+              </div>
+            </form>
+      
+            <div class="row d-flex align-items-center mb-4">          
+              <div class="text-center mb-3 col-md-12">
+                <button              
+                mdbBtn
+                color="success"
+                block="true"
+                rounded="true"
+                class="z-depth-1 waves-light"
+                (click)="submit()"              
+              >
+                Login 
+              </button>            
+            </div>          
+          </div>     
+        </div>
+      </mdb-card>
+    </section>
+  </div>
+
+
+  Username : {{userName}}
+  Password : {{password}}

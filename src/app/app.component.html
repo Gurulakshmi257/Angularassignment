@@ -1,0 +1,32 @@
+<div *ngIf="!hideButton" class="container">
+  <div class = "row">
+    <div class="text-center md-offset-3 col-md-3">
+      <button              
+        mdbBtn
+        color="success"
+        block="true"
+        rounded="true"
+        class="z-depth-1 waves-light"
+        (click)="navigateLogin()"              
+      >
+        Login 
+      </button>            
+    </div>          
+    <div class="mb-3 col-md-6"></div>
+    <div class="text-center md-offset-3 col-md-3">
+      <button              
+        mdbBtn
+        
+   color="success"
+        block="true"
+        rounded="true"
+        class="z-depth-1 waves-light"
+        (click)="navigateNetflix()"              
+      >
+        Netflix 
+      </button>            
+    </div>   
+  
+  </div>
+  </div>
+  <router-outlet></router-outlet>
